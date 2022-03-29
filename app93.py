@@ -6,8 +6,8 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 
-face_classifier = cv2.CascadeClassifier(r'C:\Users\soupau\haarcascade_frontalface_default.xml')
-classifier =load_model(r'C:\Users\soupau\Emotion_little_vgg.h5')
+face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
+classifier =load_model(r'Emotion_little_vgg.h5')
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 
